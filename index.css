@@ -1,12 +1,14 @@
+body {
+    font-family:arial;
+}
 header{
-    height: 2rem;
     width:100%;
     /*border:2px solid blue;*/
     color:#fff;
-    background-color: rgb(6, 64, 28);
+    background-color: #cb202d;
     display: flex;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 1.4rem 3rem;
     align-items: center;
 }
 a{
@@ -22,7 +24,6 @@ a{
 	text-align: center;
 	gap: 2rem;
 	color: #ffffff;
-    display:block
 }
 .desktop-actions ul li a {
 	color: #ffffff;
@@ -69,7 +70,7 @@ a{
 }
 #brand{
     font-size: medium;
-    float:left;
+    float:none;
     margin-left: 3%; 
     margin-top: -1%;
 }
@@ -83,15 +84,6 @@ a{
 }*/
 .sociallogo{
     height: 50px;
-}
-#Search{
-    height:400px;
-    width:100%;
-    /*border:2px solid rgb(85, 15, 21);*/
-    background-image:url("images/food16.jpg");
-    background-repeat:no-repeat;
-    /*background-size: cover;*/
-    background-size: 100% 100%;
 }
 /*#logo{
     height:150px;
@@ -119,11 +111,7 @@ a{
 #dropdown{
     display:flex;
     Width:50%;
-    border:2px solid white;
     height:40px;
-    margin-left: 23%;
-    margin-top: 16%;
-    position:absolute;
 
 }
 select{
@@ -131,9 +119,10 @@ select{
     text-align: center;
     height: 40px;
     width: 41.1%;
+    outline:none;
 }
 .listingmain{
-    float:left;
+    float:none;
     display: inline-block;
 }
 *{
@@ -150,16 +139,23 @@ ul {
 .filter {
     width:15%;
     border: 1px solid grey;
-    float:left;
+    float:none;
 }
 .filtername {
-    margin-bottom: 1rem;
     border-bottom: 1px solid grey;
 }
 .filtername ul {
-    padding-bottom: 1rem;
     padding-left: 1rem;
 }
+.filter .filtername:last-of-type {
+    border:0px;
+}
+/*.filter .filtername:first-child {
+    border-bottom: 2px solid green;
+}
+.filter .filtername:nth-child(2) {
+    border-bottom: 2px solid red;
+}*/
 .filtername ul li {
     margin-bottom: 1rem;
 }
@@ -217,7 +213,7 @@ ul {
 }
 .tilecomponent2{
     width:45%;
-    float:left;
+    float:none;
     margin-left: 5%;
     margin-top: 15%;
 }
@@ -241,6 +237,7 @@ ul {
 .price {
 	font-size: 0.7rem;
 	margin-top: 0.5rem;
+    padding-left: 10px;
 }
 .pricetag {
 	font-size: 0.7rem;
@@ -288,13 +285,13 @@ ul {
 .componentheading > a{
     color:rgb(6, 64, 28);
     font-size: 25px;
+    display: block;
 }
 .componentheading{
     color:gray;
     font-size: 20px;
 }
 footer{
-    height:60px;
     /*border:2px solid lightcoral;*/
 }
 .maincontainer{
@@ -306,11 +303,11 @@ footer{
 }
 footer{
     margin-top: 5%;
-    height:220px;
     color:#fff;
-    text-align:center;
+    text-align:left;
     /*border:2px solid rgb(7, 59, 30)*/
-    background-color:rgb(7, 59, 30) ;
+    background-color:rgb(129, 127, 127) ;
+    padding:1rem 1rem;
 }
 .footerdiv{
     height:70px;
@@ -319,7 +316,7 @@ footer{
 .footerwrap {
     display: flex;
     gap: 1rem;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .footermenus ul li a {
 	text-decoration: none;
@@ -370,9 +367,7 @@ footer{
     align-items: center;
     box-shadow: 2px 1px 6px 0px rgba(0,0,0,0.75);
 }
-.tilecomponent1 {
-    width: 200px;
-}
+
 .tilecomponent1 > img{
     object-fit: cover;
 }
